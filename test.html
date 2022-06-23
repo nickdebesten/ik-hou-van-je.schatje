@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+@-webkit-keyframes Background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes Background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: linear-gradient(89deg, #000fe8, #00d0ff, #00ffdf);
+    background-size: 600% 600%;
+
+    -webkit-animation: Background 9s ease infinite;
+    animation: Background 9s ease infinite;
+  color: white;
+}
+
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbar a.right {
+  float: right;
+}
+
+
+.active {
+  background: linear-gradient(89deg, #000fe8, #00d0ff, #00ffdf);
+    background-size: 600% 600%;
+
+    -webkit-animation: Background 9s ease infinite;
+    animation: Background 9s ease infinite;
+    color:white
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: rgb(35,35,35);
+  padding: 20px;
+  color:white;
+}
+
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: rgb(35,35,35);
+  padding: 20px;
+  color:white
+}
+
+
+.fakeimg {
+  background-color: rgb(35,35,35);
+
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(89deg, #000fe8, #00d0ff, #00ffdf);
+    background-size: 600% 600%;
+
+    -webkit-animation: Background 9s ease infinite;
+    animation: Background 9s ease infinite;
+  color:white
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hardstyle</h1>
+ <!-- <p>Door Nick van der Heijden</p>-->
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">home</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" class="right">Link</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Headhunterz</h2>
+    <div class="fakeimg" style="height:200px;"><img src="./images/headhunterz.jpeg" class="fakeimg" style="  width: 60%;
+      height: 100%;
+      top: 10px"></div>
+    <p>Headhunterz ookwel Willem Rebergen is 32 jaar oud komt uit Nederland en is vooral door zijn hoogste plaats als een hardstyle dj</p>
+    <iframe width="70%" height="130" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1191422350&color=%23131212&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: rgb(35,35,35);line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/headhunterz" title="Headhunterz" target="_blank" style="color: rgb(35,35,35); text-decoration: none;">Headhunterz</a> · <a href="https://soundcloud.com/headhunterz/tracks/destiny-680876396" title="Destiny" target="_blank" style="color: rgb(35,35,35); text-decoration: none;">Destiny</a></div>
+  </div>
+  <div class="main">
+    <h2>Artiesten</h2>
+    <h5>Bekenden Nederlandse hardstyle artiesten</h5>
+    <div class="fakeimg" style="height:200px;"></div>
+    <br>
+    <br>
+    <h1>Wildstylez</h1>
+    <div class="fakeimg" style="height:200px"><img src="./images/Wildstylez.jpg" class="fakeimg" style="  width: 50%; height: 150%; top: 1px"></div>
+    <div class="fakeimg" style="height:120px"></div>
+    
+    <lu>
+      <li>Officiële naam: Joram Metekohy</li>
+      <li>Leeftijd: 34</li>
+      <li>Nationaliteit: Nederlands</li>
+      <li>Ook bekend door: Zijn levenslange partnership met Noisecontrollers onder de titel Project One</li>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WA0t6ErCtus?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </lu>
+
+    <br>
+    
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Door Nick van der Heijden</h2>
+</div>
+
+</body>
+</html>
